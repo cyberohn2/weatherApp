@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/cloud.svg" type="image/x-icon">
+    <title>My Weather</title>
+</head>
+<body class="flex flex-col items-center bg-slate-700 bg-no-repeat bg-center bg-cover justify-center h-screen">
+    <main class="w-11/12 md:w-1/2 mx-auto text-white px-3 shadow-xl bg-black/80 backdrop:blur-3xl rounded-2xl" >
+        <p id="err-msg" class="font-bold text-sm text-red-100"></p>
+        <div class="text-center py-4 mb-8 flex justify-center items-center gap-6">
+            <input type="text" class="w-4/5 px-3 py-2 bg-black/40 text-white rounded border-2" placeholder="Enter a city" id="location-input">
+            <button class="w-12 h-10 rounded flex items-center justify-center bg-white hover:bg-slate-500 transition-all" id="search-btn"><img src="./images/search.svg" alt=""></button>
+        </div>
+        <div class="flex items-end gap-3 py-8">
+            <img class="w-56 rounded-xl" id="weather-icon" src="./images/cloud.svg" alt="">
+            <div id="weather-condition" class="text-5xl">
+                <p id="temp">22°</p>
+                <p id="condition" class="my-3">Clouds</p>
+                <p class="text-xl text-gray-500 font-medium">Lagos, Nigeria</p>
+            </div>
+        </div>
+        <div id="weather-info" class="text-2xl px-3 font-semibold py-3">
+        <p id="wind">Wind-Speed: 12m/s</p>
+        <p id="humidity">Humidity: 45</p>
+        </div>
+    </main>
+    <p class="mt-8 text-xl text-center">Created by <a class="text-white underline" target="_blank" href="https://github.com/cyberohn2">Cyberohn</a></p>
+    <script src="./index.js"></script>
+</body>
+</html>
